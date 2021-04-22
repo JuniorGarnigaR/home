@@ -19,7 +19,7 @@
     left: -500px;
     animation-name: content;
     animation-delay: 0.8s;
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
