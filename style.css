@@ -10,6 +10,16 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    position: relative;
+    z-index: 100;
+}
+
+.container__all{
+    position: relative;
+    left: -500px;
+    animation-name: content;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 .titles{
@@ -33,6 +43,7 @@
     background-color: black;
     text-align: center;    
     animation-name: nav;
+    animation-delay: 1.1s;
     animation-duration: 1s;
     animation-fill-mode:both;
     border-radius: 80%;
@@ -43,6 +54,42 @@
     top: 20px;
 }
 
+
+.bienvenidos{
+    display: flex;
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    height: 200px;
+    background-color:  #212f3c ;
+    border-radius: 10%;
+    justify-content: center;
+    box-shadow: 5px 2px 15px 2px black;
+    animation-name: welcome;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.container__textB{
+    width: 80%;
+    align-self: center;
+    text-align: center;
+}
+
+
+
+hr{
+    background-color: white;
+    width: 100%;
+    height: 5px;
+    margin: 10px;
+}
+
+.text__bienvenida{
+    color: white;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
 
 @keyframes nav{
     0%{
@@ -58,5 +105,29 @@
         width: 60px;
         border-radius: 80%;
         color: white;
+    }
+}
+
+@keyframes content{
+    0%{
+        left: -1000px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes welcome{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 400px;
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 0;
     }
 }
