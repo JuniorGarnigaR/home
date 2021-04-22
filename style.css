@@ -16,7 +16,7 @@
 
 .container__all{
     position: relative;
-    left: -500px;
+    left: -5000px;
     animation-name: content;
     animation-delay: 0.8s;
     animation-duration: 1s;
